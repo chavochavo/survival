@@ -81,3 +81,104 @@ body {
     border-bottom: 0;
   }
 }
+
+/* LOGIN */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,100);
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  background: rgb(220, 220, 220);
+  font-family: 'Roboto', sans-serif;
+}
+.panel-lite {
+  position: relative;
+  margin: 60px auto;
+  max-width: 360px;
+  background: #fff;
+  padding: 32px 20px 55px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+}
+.panel-lite h4 {
+  margin: 15px auto;
+  color: rgb(139, 147, 255);
+  text-align: center;
+  font-weight: 500;
+  font-size: 25px;
+}
+.profile-avatar {
+  width: 150px;
+  position: inherit;
+  height: 150px;
+  border: 5px solid #d2d2d2;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.profile-avatar img {
+  margin: 3px;
+  width: 135px;
+  height: 135px;
+  background: white;
+  border-radius: 50%;
+}
+.form-row {
+  position: relative;
+  color: #666;
+  font-size: 15px;
+}
+.form-row + .form-row {
+  margin-top: 30px;
+}
+.form-row .form-label {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 5px;
+  -moz-transition: 0.4s ease;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+.form-row .form-control {
+  position: relative;
+  padding: 5px 0;
+  width: 100%;
+  height: 35px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #777;
+  z-index: 3;
+  -moz-transition: 0.4s ease;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+.form-row .form-control:invalid {
+  outline: none;
+}
+.form-row .form-control:focus, .form-row .form-control:valid {
+  outline: none;
+  color: #151819;
+  box-shadow: 0 1px #8b93ff;
+  border-color: #8b93ff;
+}
+.form-row .form-control:focus + .form-label, .form-row .form-control:valid + .form-label {
+  font-size: 12px;
+  -webkit-transform: translateY(-15px);
+  transform: translateY(-15px);
+}
+.form-submit-btn {
+  width: 100%;
+  height: 38px;
+  background: #8b93ff;
+  border-radius: 2px;
+  font-size: 18px;
+  color: white;
+  border: none;
+  outline: none;
+}
+.form-submit-btn:hover {
+  box-shadow: 0px 0px 0px 1px #8b93ff,inset 0px 0px 0px 1px #eee;
+}
