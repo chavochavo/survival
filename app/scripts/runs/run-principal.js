@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 (function(module) {
     var RunPrincipal = function($rootScope) {
         

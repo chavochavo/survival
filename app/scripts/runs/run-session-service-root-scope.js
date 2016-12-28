@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 (function(module){
 	var RunSessionServiceRootScope = function($rootScope, SessionService){
 		

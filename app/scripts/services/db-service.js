@@ -28,14 +28,6 @@
 					"PASSWORD TEXT NOT NULL);"
 			);
 
-			console.log('creating table authority');
-			database.run(
-				"CREATE TABLE IF NOT EXISTS AUTHORITY(" +
-					"AID INT PRIMARY KEY , " +
-					"AUTHORITYNAME TEXT NOT NULL"+
-				");"  
-			);
-
 			// Registro de usuarios
 			database.exec("INSERT INTO APP_USER(EMAIL, FULLNAME, AGE, BIRTHDAY, COUNTRY, PASSWORD) VALUES('gustavo@hotmail.com','Gustavo Sergio Cortez Sanchez',76,'10/07/16','Veracruz','12345');");
 			database.exec("INSERT INTO APP_USER(EMAIL, FULLNAME, AGE, BIRTHDAY, COUNTRY, PASSWORD) VALUES('yuo@gmail.com','Yuossef Esper Mendoza',76,'10/07/16','Veracruz','12345');");
