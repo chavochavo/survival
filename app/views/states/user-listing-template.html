@@ -1,0 +1,35 @@
+<div ng-show="userslists.length" class="row" style="text-align: justify">
+  <div ng-class="{ 'col-lg-12' : !isSelectingPerson, 'col-lg-6' : isSelectingPerson }">
+    <h2>User List</h2>
+    <div>
+        <div class="row col-sm-8">
+          <div class="input-group">
+            <input type="search" ng-model="test" placeholder="User..." class="form-control" id="search">
+            <span class="input-group-addon" id="basic-addon2">Search</span>
+          </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <br/> 
+    <div class="list-group" class="col-lg-8">
+        <a href="" class="list-group-item" style="border-radius: 20px;text-align: center"  
+          ng-repeat="userslist in userslists | filter : test | filter:test as results">
+          <h3>{{userslist.fullname}}</h3><em>{{userslist.email}}</em>
+        </a>
+        <br/>
+        <div ng-hide="results.length"><h2> No results: <strong>{{test}}</strong></h2></div> 
+    </div>
+  </div>
+</div>
+
+<div class="alert alert-warning" ng-hide="userslists.length">
+  <h1><strong>No</strong> people registered</h1>
+</div>
+
+<div class="alert alert-info alert-dismissable fade in">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Usuario seleccionado :</strong>{{userslist.fullname}} 
+  </div>
+  
+
+
