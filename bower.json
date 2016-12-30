@@ -12,10 +12,11 @@
     "angular-touch": "^1.4.0",
     "angular-ui-router": "ui-router#^0.3.2",
     "sql.js": "*"
-
   },
   "devDependencies": {
-    "angular-mocks": "^1.4.0"
+    "angular-mocks": "^1.4.0",
+    "angular-ui-router": "^0.3.2",
+    "angular-translate": "^2.13.1"
   },
   "appPath": "app",
   "moduleName": "survivalApp",

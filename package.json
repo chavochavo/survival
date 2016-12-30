@@ -2,6 +2,9 @@
   "name": "survival",
   "private": true,
   "devDependencies": {
+    "angular": "^1.6.1",
+    "angular-translate": "^2.13.1",
+    "angular-ui-router": "^0.3.2",
     "autoprefixer-core": "^5.2.1",
     "grunt": "^0.4.5",
     "grunt-angular-templates": "^0.5.7",
@@ -26,8 +29,9 @@
     "grunt-usemin": "^3.0.0",
     "grunt-wiredep": "^2.0.0",
     "jit-grunt": "^0.9.1",
+    "jshint-stylish": "^1.0.0",
     "time-grunt": "^1.0.0",
-    "jshint-stylish": "^1.0.0"
+    "translate": "^0.7.0"
   },
   "engines": {
     "node": ">=0.10.0"
