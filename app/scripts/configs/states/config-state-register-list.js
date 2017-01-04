@@ -1,17 +1,21 @@
 (function(module){
 	var StateUserListingCtrl = function($scope,UserService){
-    $scope.objProject = {}
-    $scope.isSelectingPerson = false;
-    $scope.Mac = true;
-    $scope.isSelectingPerson = false;
-    $scope.userslists = UserService.getAllUsers();
+        $scope.cm;
+        $scope.objProject = {}
+        $scope.isSelectingPerson = false;
+        $scope.Mac = true;
+        $scope.userslists = UserService.getAllUsers();
 
         $scope.userData = function(person){
-        	$scope.isSelectingPerson = true;
-        	$scope.selectingPerson = angular.copy(person);
-        	$scope.selectingPerson.original = person;
+            $scope.isSelectingPerson = true;
+            $scope.selectingPerson = angular.copy(person);
+            $scope.selectingPerson.original = person;
         };
-	};
+
+        $scope.close = function(){
+            $scope.isSelectingPerson = false;
+        }
+    };
 
     StateUserListingCtrl.$inject = ['$scope','UserService'];
 

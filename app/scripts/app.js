@@ -6,5 +6,6 @@ angular.module('survivalApp', [
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'ui.router'
+    'ui.router',
+    'ui.bootstrap'
   ]);

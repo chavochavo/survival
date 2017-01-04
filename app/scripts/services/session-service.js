@@ -1,4 +1,3 @@
-
 (function(module){
 	var SessionService = function($rootScope, DBService, $state){
 		var service={};
