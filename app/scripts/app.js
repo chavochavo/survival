@@ -7,5 +7,6 @@ angular.module('survivalApp', [
     'ngSanitize',
     'ngTouch',
     'ui.router',
-    'ui.bootstrap'
+    'ui.bootstrap',
+    'pascalprecht.translate'
   ]);
